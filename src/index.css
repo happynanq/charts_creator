@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+nav{
+  
+}
+a{
+  color: #FF6F00 ; 
+}
+.logo {
+  margin-left: 10px;
+}
+.wrapper{
+  padding-bottom: 50px;
+  padding-top: 5px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  background:linear-gradient(180deg, #4db6ac, #3e9990);
+}
+.ChartWrapper{
+  border-radius: 20px;
+  /* background-color: #fff; */
+}
+/* label color */
+.input-field input[type=text] + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #1a237e !important;
+}
+ /* input color focus */
+.input-field input[type=text], .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #1a237e !important;
+  box-shadow: 0 1px 0 0 #1a237e !important;
+}
+ 
+ /* label color focus */
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #975520 !important;
+}
+ /* input focus color */
+ 
+.input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #975520 !important;
+  box-shadow: 0 1px 0 0 #975520 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input-field .prefix.active {
+  color: #000;
+}
+.checkboxSpan::before{
+  color:red;
+}
+input[type="checkbox"]:checked + span:not(.lever)::before{
+  border:2px solid transparent;
+  border-bottom:2px solid #006AB5;
+  border-right:2px solid #006AB5;
+  background:transparent;
+}
+
+.helper-text::after{
+  color:#1a237e !important;
 }
